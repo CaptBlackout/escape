@@ -1,0 +1,28 @@
+print("Lets see your body index")
+name = raw_input("name: ")
+
+print("Enter your weight in pounds")
+weight = raw_input("weight: ")
+
+print("Enter your height in inches")
+height = raw_input("height: ")
+
+weight1 = float(weight)
+height1 = float(height)
+bmi = (height1**2)
+bmi1 = (weight1/bmi)
+bmi2 = (bmi1*703)
+
+print(name, "Your bmi is", bmi2)
+
+if (bmi2<18.5): 
+    print("You needs McDonalds!!")
+    
+elif (18.5<bmi2 and bmi2<24.9):
+    print("You all Fine")
+    
+elif (25<bmi2 and bmi2<29.9):
+    print("Work a little")
+    
+else:
+    print("YOU PHAT")
